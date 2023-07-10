@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto px-4">
+            <nav class="bg-gray-800">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0">
+                      <a href="./home.html" class="text-white text-lg font-semibold">My Website</a>
+                    </div>
+                    <div class="hidden md:block">
+                      <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="./home.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="./profile.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Profile</a>
+                        <a href="./dashboard.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
+                        <a href="./prediction.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Prediction</a>
+                        <a href="./about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="./contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                      </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                      <button type="button" class="text-gray-300 hover:bg-gray-700 hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+                        <!-- Icon when the menu is closed -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <!-- Icon when the menu is open -->
+                        <svg class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Mobile menu, show/hide based on menu state. -->
+                <div class="md:hidden hidden">
+                  <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="/profile" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Profile</a>
+                    <a href="/dashboard" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+                    <a href="/prediction" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Prediction</a>
+                    <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                  </div>
+                </div>
+              </nav>
+              
+        </div>
+    </nav>
+    <div class="container mx-auto px-4">
+
+        <h1 class="text-3xl font-bold mt-8">Prediction Form</h1>
+       
+        <form action="/prediction" method="post">
+            <div class="mt-4">
+                <label class="block font-bold" for="age">Age:</label>
+                <input class="border rounded py-2 px-3" type="number" name="age" id="age" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="sex">Sex:</label>
+                <select class="border rounded py-2 px-3" name="sex" id="sex" required>
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                </select>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="cp">Chest Pain Type:</label>
+                <input class="border rounded py-2 px-3" type="number" name="cp" id="cp" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="restbps">Resting Blood Pressure:</label>
+                <input class="border rounded py-2 px-3" type="number" name="restbps" id="restbps" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="chol">Cholesterol:</label>
+                <input class="border rounded py-2 px-3" type="number" name="chol" id="chol" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="fbs">Fasting Blood Sugar:</label>
+                <input class="border rounded py-2 px-3" type="number" name="fbs" id="fbs" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="restecg">Resting ECG:</label>
+                <input class="border rounded py-2 px-3" type="number" name="restecg" id="restecg" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="thalach">Maximum Heart Rate:</label>
+                <input class="border rounded py-2 px-3" type="number" name="thalach" id="thalach" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="exang">Exercise Induced Angina:</label>
+                <select class="border rounded py-2 px-3" name="exang" id="exang" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="oldpeak">ST Depression Induced by Exercise:</label>
+                <input class="border rounded py-2 px-3" type="number" step="0.1" name="oldpeak" id="oldpeak" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="slope">Slope of the Peak Exercise ST Segment:</label>
+                <input class="border rounded py-2 px-3" type="number" name="slope" id="slope" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="ca">Number of Major Vessels (0-3) Colored by Flourosopy:</label>
+                <input class="border rounded py-2 px-3" type="number" name="ca" id="ca" required>
+            </div>
+            <div class="mt-4">
+                <label class="block font-bold" for="thal">Thalassemia:</label>
+                <input class="border rounded py-2 px-3" type="number" name="thal" id="thal" required>
+            </div>
+            <div class="mt-4">
+                <button class="bg-blue-500 text-white py-2 px-4 rounded" type="submit">Predict</button>
+            </div>
+        </form>
+
+
+
+
+
+        <h2 class="text-xl font-bold mt-4">Prediction Result:</h2>
+        <p class="text-lg">{{ prediction_result }}</p>
+
+       
+    </div>
+    <script src="/static/prediction.js"></script>
+</body>
+</html>
