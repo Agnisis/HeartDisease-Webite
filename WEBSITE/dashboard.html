@@ -3,54 +3,107 @@
 
 <head>
   <title>Dashboard</title>
-  <link rel="stylesheet" type="text/css" href="./dashboard.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .form-container {
+      background: linear-gradient(45deg, #FF8C00, #FF4500);
+    }
+  </style>
 </head>
 
-<body>
-  <h1>Dashboard</h1>
+<body class="bg-red-300">
+  <nav class="navbar bg-gradient-to-br from-orange-500 to-red-500">
+    <div class="container mx-auto px-4 form-container">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <!-- <img class="h-8 w-8" src="heart_logo.png" alt="Heart Disease Prediction Logo"> -->
+          <span class="text-white text-lg font-semibold ml-2">Heart Disease Prediction</span>
+        </div>
+        <div class="hidden md:block">
+          <ul class="flex space-x-4">
+            <li><a href="./public/home.html" class="text-white">Home</a></li>
+            <li><a href="./dashboard.html" class="text-white">Dashboard</a></li>
+            <li><a href="#" class="text-white">Prediction</a></li>
+            <li><a href="#" class="text-white">Contact Us</a></li>
+            <li><a href="#" class="text-white">About Us</a></li>
+            <li><a href="./login.html" class="text-white">Login</a></li>
+            <li><a href="./register.html" class="text-white">Register</a></li>
+          </ul>
+        </div>
+        <div class="md:hidden">
+          <button type="button" class="text-white focus:outline-none">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <h1 class="text-center text-white font-bold text-4xl mt-8">Dashboard</h1>
+ <div class="container mx-auto ">
 
-  <form id="dataForm">
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" required>
+   <form id="dataForm" class="max-w-md mx-auto mt-8 bg-white form-container rounded-lg shadow-lg p-8">
+  
+     <label for="age" class="block mb-2">Age:</label>
+     <input type="number" id="age" name="age" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="sex">Sex:</label>
-    <input type="text" id="sex" name="sex" required>
+    <label for="sex" class="block mb-2">Sex:</label>
+    <input type="text" id="sex" name="sex" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="cp">Chest Pain Type:</label>
-    <input type="number" id="cp" name="cp" required>
+    <label for="cp" class="block mb-2">Chest Pain Type:</label>
+    <input type="number" id="cp" name="cp" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="restbps">Resting Blood Pressure:</label>
-    <input type="number" id="restbps" name="restbps" required>
+    <label for="restbps" class="block mb-2">Resting Blood Pressure:</label>
+    <input type="number" id="restbps" name="restbps" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="chol">Cholesterol:</label>
-    <input type="number" id="chol" name="chol" required>
+    <label for="chol" class="block mb-2">Cholesterol:</label>
+    <input type="number" id="chol" name="chol" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="fbs">Fasting Blood Sugar:</label>
-    <input type="number" id="fbs" name="fbs" required>
+    <label for="fbs" class="block mb-2">Fasting Blood Sugar:</label>
+    <input type="number" id="fbs" name="fbs" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="restecg">Resting Electrocardiographic Results:</label>
-    <input type="number" id="restecg" name="restecg" required>
+    <label for="restecg" class="block mb-2">Resting Electrocardiographic Results:</label>
+    <input type="number" id="restecg" name="restecg" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="thalach">Maximum Heart Rate Achieved:</label>
-    <input type="number" id="thalach" name="thalach" required>
+    <label for="thalach" class="block mb-2">Maximum Heart Rate Achieved:</label>
+    <input type="number" id="thalach" name="thalach" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="exang">Exercise Induced Angina:</label>
-    <input type="number" id="exang" name="exang" required>
+    <label for="exang" class="block mb-2">Exercise Induced Angina:</label>
+    <input type="number" id="exang" name="exang" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="oldpeak">ST Depression Induced by Exercise:</label>
-    <input type="number" id="oldpeak" name="oldpeak" required>
+    <label for="oldpeak" class="block mb-2">ST Depression Induced by Exercise:</label>
+    <input type="number" id="oldpeak" name="oldpeak" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="slope">Slope of the Peak Exercise ST Segment:</label>
-    <input type="number" id="slope" name="slope" required>
+    <label for="slope" class="block mb-2">Slope of the Peak Exercise ST Segment:</label>
+    <input type="number" id="slope" name="slope" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="ca">Number of Major Vessels (0-3) Colored by Fluoroscopy:</label>
-    <input type="number" id="ca" name="ca" required>
+    <label for="ca" class="block mb-2">Number of Major Vessels (0-3) Colored by Fluoroscopy:</label>
+    <input type="number" id="ca" name="ca" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <label for="thal">Thalassemia:</label>
-    <input type="number" id="thal" name="thal" required>
+    <label for="thal" class="block mb-2">Thalassemia:</label>
+    <input type="number" id="thal" name="thal" required
+      class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
-    <button type="submit">Generate Chart</button>
+    <button type="submit"
+      class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Generate Chart</button>
   </form>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./dashboard.js"></script>

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Login Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Disease Prediction</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    .form-container {
+    .navbar {
       background: linear-gradient(45deg, #FF8C00, #FF4500);
     }
   </style>
 </head>
 
-<body class="bg-red-300">
+<body>
   <nav class="navbar">
-    <div class="container mx-auto px-4 form-container">
+    <div class="container mx-auto px-4">
       <div class="flex justify-between items-center py-4">
         <div class="flex items-center">
           <!-- <img class="h-8 w-8" src="heart_logo.png" alt="Heart Disease Prediction Logo"> -->
@@ -44,28 +46,9 @@
       </div>
     </div>
   </nav>
-  <h1 class="text-center text-white text-6xl m-7">Login Page</h1>
 
-  <div class="container mx-auto">
-    <form id="LoginForm" class="max-w-md mx-auto mt-8 form-container rounded-lg shadow-lg p-8">
-      <label for="name" class="block mb-2 text-white">Name:</label>
-      <input type="text" id="name" name="name" required
-        class="w-full px-4 py-2 border border-orange-500 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500">
+  <!-- Rest of the page content -->
 
-      <label for="email" class="block mb-2 text-white">Email:</label>
-      <input type="email" id="email" name="email" required
-        class="w-full px-4 py-2 border border-orange-500 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500">
-
-      <label for="password" class="block mb-2 text-white">Password:</label>
-      <input type="password" id="password" name="password" required
-        class="w-full px-4 py-2 border border-orange-500 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500">
-
-      <button type="submit"
-        class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 focus:outline-none focus:bg-teal-600">Login</button>
-    </form>
-  </div>
-
-  <script src="./login.js"></script>
 </body>
 
 </html>
