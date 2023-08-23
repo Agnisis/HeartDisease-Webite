@@ -36,21 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
       thal
     };
 
-    // Send the data to the server
-    fetch('/predict', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-      .then(response => response.json())
-      .then(result => {
-        // Log the prediction result to the console
-        console.log('Prediction:', result.prediction);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
+    
   }
 });
